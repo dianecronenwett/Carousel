@@ -16,6 +16,7 @@
 		E45AF94219F4A4EA00319D96 /* IntroScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45AF94119F4A4EA00319D96 /* IntroScrollViewController.swift */; };
 		E45AF94419F4B41600319D96 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45AF94319F4B41600319D96 /* WelcomeViewController.swift */; };
 		E45AF94619F4C14700319D96 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45AF94519F4C14700319D96 /* SignInViewController.swift */; };
+		E45AF94819F5B10000319D96 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45AF94719F5B10000319D96 /* GridViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		E45AF94119F4A4EA00319D96 /* IntroScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroScrollViewController.swift; sourceTree = "<group>"; };
 		E45AF94319F4B41600319D96 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		E45AF94519F4C14700319D96 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		E45AF94719F5B10000319D96 /* GridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				E45AF94519F4C14700319D96 /* SignInViewController.swift */,
+				E45AF94719F5B10000319D96 /* GridViewController.swift */,
 				E45AF94319F4B41600319D96 /* WelcomeViewController.swift */,
 				E44460F319F49B22005A7123 /* carousel */,
 				E444610919F49B22005A7123 /* carouselTests */,
@@ -223,6 +226,7 @@
 			files = (
 				E44460F919F49B22005A7123 /* ViewController.swift in Sources */,
 				E45AF94419F4B41600319D96 /* WelcomeViewController.swift in Sources */,
+				E45AF94819F5B10000319D96 /* GridViewController.swift in Sources */,
 				E44460F719F49B22005A7123 /* AppDelegate.swift in Sources */,
 				E45AF94619F4C14700319D96 /* SignInViewController.swift in Sources */,
 				E45AF94219F4A4EA00319D96 /* IntroScrollViewController.swift in Sources */,

@@ -201,8 +201,23 @@
                                         <rect key="frame" x="960" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CLm-oC-cy7">
+                                        <rect key="frame" x="991" y="477" width="276" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="spinButtonAction:" destination="tbR-fy-n9j" eventType="touchUpInside" id="cgD-4r-Ush"/>
+                                            <segue destination="Qdd-iw-ICA" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="V55-gN-v0d"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backup_button" id="6WB-H1-NXz">
+                                <rect key="frame" x="952" y="450" width="320" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="bTm-Oc-Rx2">
                                 <rect key="frame" x="146" y="500" width="39" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -215,7 +230,9 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1280" height="568"/>
                     <connections>
+                        <outlet property="backUpButtons" destination="6WB-H1-NXz" id="PPo-6r-gKv"/>
                         <outlet property="pageControl" destination="bTm-Oc-Rx2" id="yLH-eV-zpd"/>
+                        <outlet property="spinButton" destination="CLm-oC-cy7" id="BWJ-YU-IW0"/>
                         <outlet property="welcome1" destination="Bki-um-XSQ" id="sdn-fa-fzk"/>
                         <outlet property="welcomeScroll" destination="0nN-VJ-zgf" id="fsH-lz-RBT"/>
                     </connections>
@@ -223,6 +240,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rfc-AK-AIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="653" y="1400"/>
+        </scene>
+        <!--Grid View Controller-->
+        <scene sceneID="xd2-m9-h1B">
+            <objects>
+                <viewController id="Qdd-iw-ICA" customClass="GridViewController" customModule="carousel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j3D-PL-K4R">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="AES-yH-JeX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feed" id="dgd-G9-KJv">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1564"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scrubber" id="4vz-OU-G0J">
+                                        <rect key="frame" x="0.0" y="532" width="320" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O68-ou-NTt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1478" y="1400"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zRZ-0e-bvX">
@@ -244,9 +291,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backup_button" width="320" height="97"/>
         <image name="create_text" width="320" height="63"/>
+        <image name="feed" width="320" height="1564"/>
         <image name="intro" width="320" height="1136"/>
         <image name="login_form" width="320" height="113"/>
+        <image name="scrubber" width="320" height="36"/>
         <image name="sign_in_buttons" width="320" height="104"/>
         <image name="sign_in_nav_bar" width="320" height="66"/>
         <image name="welcome1" width="320" height="568"/>

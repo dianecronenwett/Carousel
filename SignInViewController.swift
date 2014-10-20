@@ -25,15 +25,22 @@ class SignInViewController: UIViewController {
         activityIcon.startAnimating()
         self.logInButton.enabled = false
         delay(2) {
-            println("foo111")
+           // println("foo111")
             self.activityIcon.stopAnimating()
 //            self.logInButton.selected = false
             self.logInButton.enabled = true
+
+// App Segues need to be connected from the view to the view controller you want to segue to
             
             if(self.emailField.text == "d" && self.passwordField.text == "s") {
                 self.performSegueWithIdentifier("app_segue", sender: self)
+                
+            //  var alertView = UIAlertView(title: "Signing In...")
+             //  alertView.show()
+
+                
             } else {
-                var alertView = UIAlertView(title: "Title", message: "Message", delegate: nil, cancelButtonTitle: "OK", otherButtonTitles: "Option 1", "Option 2")
+                var alertView = UIAlertView(title: "Sign In Failed", message: "Please enter valid credentials", delegate: nil, cancelButtonTitle: "OK")
                 alertView.show()
             }
         }
