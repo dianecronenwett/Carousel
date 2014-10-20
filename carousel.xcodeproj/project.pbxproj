@@ -13,6 +13,8 @@
 		E44460FE19F49B22005A7123 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44460FD19F49B22005A7123 /* Images.xcassets */; };
 		E444610119F49B22005A7123 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E44460FF19F49B22005A7123 /* LaunchScreen.xib */; };
 		E444610D19F49B22005A7123 /* carouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E444610C19F49B22005A7123 /* carouselTests.swift */; };
+		E45AF94219F4A4EA00319D96 /* IntroScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45AF94119F4A4EA00319D96 /* IntroScrollViewController.swift */; };
+		E45AF94419F4B41600319D96 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45AF94319F4B41600319D96 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		E444610619F49B22005A7123 /* carouselTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = carouselTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E444610B19F49B22005A7123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E444610C19F49B22005A7123 /* carouselTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carouselTests.swift; sourceTree = "<group>"; };
+		E45AF94119F4A4EA00319D96 /* IntroScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroScrollViewController.swift; sourceTree = "<group>"; };
+		E45AF94319F4B41600319D96 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 		E44460E819F49B22005A7123 = {
 			isa = PBXGroup;
 			children = (
+				E45AF94319F4B41600319D96 /* WelcomeViewController.swift */,
 				E44460F319F49B22005A7123 /* carousel */,
 				E444610919F49B22005A7123 /* carouselTests */,
 				E44460F219F49B22005A7123 /* Products */,
@@ -80,6 +85,7 @@
 				E44460F619F49B22005A7123 /* AppDelegate.swift */,
 				E44460F819F49B22005A7123 /* ViewController.swift */,
 				E44460FA19F49B22005A7123 /* Main.storyboard */,
+				E45AF94119F4A4EA00319D96 /* IntroScrollViewController.swift */,
 				E44460FD19F49B22005A7123 /* Images.xcassets */,
 				E44460FF19F49B22005A7123 /* LaunchScreen.xib */,
 				E44460F419F49B22005A7123 /* Supporting Files */,
@@ -213,7 +219,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E44460F919F49B22005A7123 /* ViewController.swift in Sources */,
+				E45AF94419F4B41600319D96 /* WelcomeViewController.swift in Sources */,
 				E44460F719F49B22005A7123 /* AppDelegate.swift in Sources */,
+				E45AF94219F4A4EA00319D96 /* IntroScrollViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +413,7 @@
 				E444611219F49B22005A7123 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E444611319F49B22005A7123 /* Build configuration list for PBXNativeTarget "carouselTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +422,7 @@
 				E444611519F49B22005A7123 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
