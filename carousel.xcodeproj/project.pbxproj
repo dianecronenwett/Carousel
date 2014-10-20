@@ -15,6 +15,7 @@
 		E444610D19F49B22005A7123 /* carouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E444610C19F49B22005A7123 /* carouselTests.swift */; };
 		E45AF94219F4A4EA00319D96 /* IntroScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45AF94119F4A4EA00319D96 /* IntroScrollViewController.swift */; };
 		E45AF94419F4B41600319D96 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45AF94319F4B41600319D96 /* WelcomeViewController.swift */; };
+		E45AF94619F4C14700319D96 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45AF94519F4C14700319D96 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		E444610C19F49B22005A7123 /* carouselTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carouselTests.swift; sourceTree = "<group>"; };
 		E45AF94119F4A4EA00319D96 /* IntroScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroScrollViewController.swift; sourceTree = "<group>"; };
 		E45AF94319F4B41600319D96 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		E45AF94519F4C14700319D96 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		E44460E819F49B22005A7123 = {
 			isa = PBXGroup;
 			children = (
+				E45AF94519F4C14700319D96 /* SignInViewController.swift */,
 				E45AF94319F4B41600319D96 /* WelcomeViewController.swift */,
 				E44460F319F49B22005A7123 /* carousel */,
 				E444610919F49B22005A7123 /* carouselTests */,
@@ -221,6 +224,7 @@
 				E44460F919F49B22005A7123 /* ViewController.swift in Sources */,
 				E45AF94419F4B41600319D96 /* WelcomeViewController.swift in Sources */,
 				E44460F719F49B22005A7123 /* AppDelegate.swift in Sources */,
+				E45AF94619F4C14700319D96 /* SignInViewController.swift in Sources */,
 				E45AF94219F4A4EA00319D96 /* IntroScrollViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
