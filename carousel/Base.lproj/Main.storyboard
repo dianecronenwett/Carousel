@@ -201,15 +201,15 @@
                                         <rect key="frame" x="960" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CLm-oC-cy7">
-                                        <rect key="frame" x="991" y="477" width="276" height="47"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xtp-k4-u57">
+                                        <rect key="frame" x="952" y="487" width="320" height="69"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="spinButtonAction:" destination="tbR-fy-n9j" eventType="touchUpInside" id="cgD-4r-Ush"/>
-                                            <segue destination="Qdd-iw-ICA" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="V55-gN-v0d"/>
+                                            <action selector="spinButton:" destination="tbR-fy-n9j" eventType="touchUpInside" id="3AA-sB-TYc"/>
+                                            <segue destination="Qdd-iw-ICA" kind="modal" id="pk4-RH-LsY"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -232,7 +232,6 @@
                     <connections>
                         <outlet property="backUpButtons" destination="6WB-H1-NXz" id="PPo-6r-gKv"/>
                         <outlet property="pageControl" destination="bTm-Oc-Rx2" id="yLH-eV-zpd"/>
-                        <outlet property="spinButton" destination="CLm-oC-cy7" id="BWJ-YU-IW0"/>
                         <outlet property="welcome1" destination="Bki-um-XSQ" id="sdn-fa-fzk"/>
                         <outlet property="welcomeScroll" destination="0nN-VJ-zgf" id="fsH-lz-RBT"/>
                     </connections>
@@ -254,18 +253,23 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feed" id="dgd-G9-KJv">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1564"/>
+                                        <rect key="frame" x="0.0" y="8" width="320" height="1564"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scrubber" id="4vz-OU-G0J">
-                                        <rect key="frame" x="0.0" y="532" width="320" height="36"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                             </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scrubber" id="4vz-OU-G0J">
+                                <rect key="frame" x="1" y="533" width="320" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="feedScroll" destination="AES-yH-JeX" id="pLO-f2-iEW"/>
+                        <outlet property="imageView" destination="dgd-G9-KJv" id="XFg-bc-ObR"/>
+                        <outlet property="scrubberView" destination="4vz-OU-G0J" id="umk-F3-wkf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O68-ou-NTt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -310,7 +314,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="v6g-SI-twH"/>
         <segue reference="Qfe-3e-FNK"/>
+        <segue reference="JsW-6d-lHM"/>
     </inferredMetricsTieBreakers>
 </document>

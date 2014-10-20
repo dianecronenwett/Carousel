@@ -10,10 +10,17 @@ import UIKit
 
 class GridViewController: UIViewController {
 
+    @IBOutlet weak var feedScroll: UIScrollView!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var scrubberView: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        feedScroll.contentSize = imageView.frame.size
+        feedScroll.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 60, right: 0)
     }
 
     override func didReceiveMemoryWarning() {

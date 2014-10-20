@@ -16,21 +16,15 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var spinButton: UIButton!
     @IBOutlet weak var backUpButtons: UIImageView!
     
+   
     @IBAction func spinButtonAction(sender: AnyObject) {
-//        var fadeInDuration= 2
-        
-//      spinButton.animationDidStart(<#anim: CAAnimation!#>)
-        
-       // UIView.animateWithDuration(2, animations: //{ () -> Void in
-           // self.backUpButtons.alpha = 1
-      //  })
        
         
         
     }
-
-
-
+    
+    @IBAction func spinButton(sender: AnyObject) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -61,7 +55,10 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
             println(backUpButtons.alpha)
         }
         
-        // alpha = (offset - 640) / 320
+        
+        
+      
+
     }
     
     func scrollViewWillBeginDragging(scrollView: UIScrollView!) {
