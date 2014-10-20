@@ -9,16 +9,49 @@
 import UIKit
 
 class SignInViewController: UIViewController {
-    @IBOutlet var backButton: UITapGestureRecognizer!
+
+    @IBOutlet weak var formScroll: UIScrollView!
+    @IBOutlet weak var formView: UIImageView!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var logInButton: UIButton!
+    @IBOutlet weak var activityIcon: UIActivityIndicatorView!
+    
    
-    @IBAction func backButton(sender: AnyObject) {
-         navigationController!.popViewControllerAnimated(true)
+    @IBAction func signInButton(sender: AnyObject) {
+        println("foo")
+        
+//        logInButton.selected = true
+        activityIcon.startAnimating()
+        self.logInButton.enabled = false
+        delay(2) {
+            println("foo111")
+            self.activityIcon.stopAnimating()
+//            self.logInButton.selected = false
+            self.logInButton.enabled = true
+            
+            if(self.emailField.text == "d" && self.passwordField.text == "s") {
+                self.performSegueWithIdentifier("app_segue", sender: self)
+            } else {
+                var alertView = UIAlertView(title: "Title", message: "Message", delegate: nil, cancelButtonTitle: "OK", otherButtonTitles: "Option 1", "Option 2")
+                alertView.show()
+            }
+        }
     }
     
-    override func viewDidLoad() {
+    @IBAction func backButton(sender: AnyObject) {
+        navigationController!.popViewControllerAnimated(true)
+    }
+   
+    @IBAction func onTap(sender: AnyObject) {
+        view.endEditing(true)
+    }
+       override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Keyboard registering of events
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,6 +59,34 @@ class SignInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func keyboardWillShow(notification: NSNotification!) {
+        var userInfo = notification.userInfo!
+        
+        // Get the keyboard height and width from the notification
+        // Size varies depending on OS, language, orientation
+        var kbSize = (userInfo[UIKeyboardFrameEndUserInfoKey] as NSValue).CGRectValue().size
+        
+        formScroll.contentOffset.y = formView.frame.origin.y
+    }
+    
+    func keyboardWillHide(notification: NSNotification!) {
+        var userInfo = notification.userInfo!
+        
+        // Get the keyboard height and width from the notification
+        // Size varies depending on OS, language, orientation
+        var kbSize = (userInfo[UIKeyboardFrameEndUserInfoKey] as NSValue).CGRectValue().size
+        
+        formScroll.contentOffset.y = 0
+    }
+    
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
+    }
 
     /*
     // MARK: - Navigation
