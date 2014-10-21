@@ -1,5 +1,7 @@
 Carousel
 ========
+18 hours to complete w/ starting over 
+
 Project Requirements
 
 Sign In
