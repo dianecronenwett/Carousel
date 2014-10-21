@@ -32,5 +32,5 @@ Settings
 [Did not complete]Optional: Upon completion of the events, mark them green.
 [Did not complete]Optional: When all events are completed, dismiss the banner.
 
-[!]carousel.gif
-[!]carousel2.gif
+![Image](carousel.gif)
+![Image](carousel2.gif)
