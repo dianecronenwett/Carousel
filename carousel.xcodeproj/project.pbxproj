@@ -18,6 +18,7 @@
 		E45AF94619F4C14700319D96 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45AF94519F4C14700319D96 /* SignInViewController.swift */; };
 		E45AF94819F5B10000319D96 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45AF94719F5B10000319D96 /* GridViewController.swift */; };
 		E45AF94A19F6083C00319D96 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45AF94919F6083C00319D96 /* ConversationViewController.swift */; };
+		E45AF94C19F61D2F00319D96 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45AF94B19F61D2F00319D96 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		E45AF94519F4C14700319D96 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		E45AF94719F5B10000319D96 /* GridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
 		E45AF94919F6083C00319D96 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		E45AF94B19F61D2F00319D96 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		E44460E819F49B22005A7123 = {
 			isa = PBXGroup;
 			children = (
+				E45AF94B19F61D2F00319D96 /* SettingsViewController.swift */,
 				E45AF94519F4C14700319D96 /* SignInViewController.swift */,
 				E45AF94719F5B10000319D96 /* GridViewController.swift */,
 				E45AF94319F4B41600319D96 /* WelcomeViewController.swift */,
@@ -234,6 +237,7 @@
 				E44460F719F49B22005A7123 /* AppDelegate.swift in Sources */,
 				E45AF94619F4C14700319D96 /* SignInViewController.swift in Sources */,
 				E45AF94219F4A4EA00319D96 /* IntroScrollViewController.swift in Sources */,
+				E45AF94C19F61D2F00319D96 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
