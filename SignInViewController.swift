@@ -19,7 +19,7 @@ class SignInViewController: UIViewController {
     
    
     @IBAction func signInButton(sender: AnyObject) {
-        println("foo")
+       // println("foo")
         
 //        logInButton.selected = true
         

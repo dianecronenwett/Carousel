@@ -17,6 +17,7 @@
 		E45AF94419F4B41600319D96 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45AF94319F4B41600319D96 /* WelcomeViewController.swift */; };
 		E45AF94619F4C14700319D96 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45AF94519F4C14700319D96 /* SignInViewController.swift */; };
 		E45AF94819F5B10000319D96 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45AF94719F5B10000319D96 /* GridViewController.swift */; };
+		E45AF94A19F6083C00319D96 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45AF94919F6083C00319D96 /* ConversationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		E45AF94319F4B41600319D96 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		E45AF94519F4C14700319D96 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		E45AF94719F5B10000319D96 /* GridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		E45AF94919F6083C00319D96 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				E45AF94519F4C14700319D96 /* SignInViewController.swift */,
 				E45AF94719F5B10000319D96 /* GridViewController.swift */,
 				E45AF94319F4B41600319D96 /* WelcomeViewController.swift */,
+				E45AF94919F6083C00319D96 /* ConversationViewController.swift */,
 				E44460F319F49B22005A7123 /* carousel */,
 				E444610919F49B22005A7123 /* carouselTests */,
 				E44460F219F49B22005A7123 /* Products */,
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E45AF94A19F6083C00319D96 /* ConversationViewController.swift in Sources */,
 				E44460F919F49B22005A7123 /* ViewController.swift in Sources */,
 				E45AF94419F4B41600319D96 /* WelcomeViewController.swift in Sources */,
 				E45AF94819F5B10000319D96 /* GridViewController.swift in Sources */,
