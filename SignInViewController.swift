@@ -22,8 +22,25 @@ class SignInViewController: UIViewController {
         println("foo")
         
 //        logInButton.selected = true
+        
+        if (emailField.text == "") {
+            // alert
+            var alertView = UIAlertView(title: "Email is Required", message: "Please enter valid credentials", delegate: nil, cancelButtonTitle: "OK")
+            alertView.show()
+            return
+        }
+        if (passwordField.text == "") {
+            // alert
+            var alertView = UIAlertView(title: "Password Sucks", message: "Please enter valid credentials", delegate: nil, cancelButtonTitle: "OK")
+            alertView.show()
+            return
+        }
+        
         activityIcon.startAnimating()
         self.logInButton.enabled = false
+
+        var alertView = UIAlertView(title: "Signing In...", message: "", delegate: nil, cancelButtonTitle: nil)
+        alertView.show()
         delay(2) {
            // println("foo111")
             self.activityIcon.stopAnimating()
@@ -32,13 +49,10 @@ class SignInViewController: UIViewController {
 
 // App Segues need to be connected from the view to the view controller you want to segue to
             
+            alertView.dismissWithClickedButtonIndex(0, animated: true)
+            
             if(self.emailField.text == "d" && self.passwordField.text == "s") {
                 self.performSegueWithIdentifier("app_segue", sender: self)
-                
-            //  var alertView = UIAlertView(title: "Signing In...")
-             //  alertView.show()
-
-                
             } else {
                 var alertView = UIAlertView(title: "Sign In Failed", message: "Please enter valid credentials", delegate: nil, cancelButtonTitle: "OK")
                 alertView.show()

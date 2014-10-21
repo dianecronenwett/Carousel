@@ -20,7 +20,7 @@ class GridViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         feedScroll.contentSize = imageView.frame.size
-        feedScroll.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 60, right: 0)
+       // feedScroll.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 60, right: 0)
     }
 
     override func didReceiveMemoryWarning() {
