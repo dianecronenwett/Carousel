@@ -28,7 +28,6 @@ Image Timeline
 Settings
 * [ ] User can dismiss the settings screen.
 * [ ] User can log out
-
 * [ ] View a photo full screen
 * [ ] Swipe left and right
 * [ ] Optional: Share a photo
