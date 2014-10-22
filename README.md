@@ -26,14 +26,14 @@ Image Timeline
 * [x] User can tap on the profile image to see the settings view (modal from below).
 
 Settings
-* [ ][Did not complete] User can dismiss the settings screen.
-* [ ][Did not complete]User can log out
+* [ ] User can dismiss the settings screen.
+* [ ] User can log out
 
-* [ ] [Did not complete] View a photo full screen
-* [ ] [Did not complete] Swipe left and right
-* [ ] [Did not complete] Share a photo
-* [ ] [Did not complete] Optional: Upon completion of the events, mark them green.
-* [ ] [Did not complete] Optional: When all events are completed, dismiss the banner.
+* [ ] View a photo full screen
+* [ ] Swipe left and right
+* [ ] Optional: Share a photo
+* [ ] Optional: Upon completion of the events, mark them green.
+* [ ] Optional: When all events are completed, dismiss the banner.
 
 ![Image](carousel.gif)
 ![Image](carousel2.gif)
